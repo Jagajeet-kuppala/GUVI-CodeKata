@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main(){
+  unsigned long long int result;
+  int input;
+  scanf("%d",&input);
+  if(input==0 || input==1)  printf("1");
+  else{
+    while(input>1){
+      result= result*input;
+      input--;
+    }
+  }
+  
+  return 0;
+}
