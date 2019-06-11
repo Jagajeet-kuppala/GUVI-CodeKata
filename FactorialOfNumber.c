@@ -1,16 +1,18 @@
 #include<stdio.h>
+#include<stdlib.h>
 
 int main(){
-  unsigned long long int result=0;
+  unsigned long long int result=1;
   int input;
   scanf("%d",&input);
   if(input==0 || input==1)  printf("1");
-  else{
+  else if(input>1){
     while(input>1){
-      result= result*input;
+      result= result*(unsigned long long int)input;
       input--;
     }
   }
-  printf("%llu",result);
+  else{ printf("0"); return 0;}
+  printf("%d",result);
   return 0;
 }
