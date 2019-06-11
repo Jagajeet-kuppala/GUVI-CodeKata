@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-  unsigned long long int result;
+  unsigned long long int result=0;
   int input;
   scanf("%d",&input);
   if(input==0 || input==1)  printf("1");
