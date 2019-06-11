@@ -11,6 +11,6 @@ int main(){
       input--;
     }
   }
-  
+  printf("%llu",result);
   return 0;
 }
